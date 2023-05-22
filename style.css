@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: blueviolet;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: whitesmoke;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease-out;
+}
+
+form {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form input {
+    color: rgb(51, 16, 16);
+    width: 80%;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: 32px;
+    padding-left: 32px;
+}
+
+form input::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+color: rgb(65, 40, 9);
+text-transform: capitalize;
+}
+
+form button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: rgb(9, 9, 56);
+    background: lightblue;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: 0.5 ease;
+}
+
+form button:hover {
+    color: blanchedalmond;
+    background: rgb(63, 14, 63);
+}
+
+form i{
+    position: absolute;
+    color: black;
+    font-size: 30px;
+}
+
+.weather-box{
+    text-align: center;
+}
+
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.weather-box .temperature{
+    position: relative;
+    color: black;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.weather-box .description{
+    color: blue;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    
+}
+
+.not-found{
+    display: none;
+}

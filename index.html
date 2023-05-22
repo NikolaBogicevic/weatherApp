@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-
-
-    <script src="./app.js"></script>
+    <div class="card">
+<form>
+    <i class="fa-solid fa-location-dot"></i>
+    <input type="text" name="input" id="input" value="serbia" required>
+    <button  class="fa-solid fa-magnifying-glass" type="button" id="button"><i ></i></button>
+</form>    
+<div class="not-found">
+    <img src="images/404.png">
+    <p>oops! Invalid location :/</p>
+</div>    
+<div class="weather-box">
+    <img src="">
+    <p class="temperature"></p>
+    <p class="description"></p>
+</div>
+<div class="weather-details">
+    <div class="humidity">
+        <i class="fa-solid fa-water"></i>
+        <div class="text">
+            <span></span>
+            <p>Humidity</p>
+        </div>
+    </div>
+    <div class="wind">
+        <i class="fa-solid fa-wind"></i>
+        <div class="text">
+            <span></span>
+            <p>Wind Speed</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="./app.js"></script> 
+    <script src="https://kit.fontawesome.com/f83eaccbc1.js" crossorigin="anonymous"></script>
 </body>
 </html>
