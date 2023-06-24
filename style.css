@@ -11,13 +11,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: blueviolet;
+    background: rgb(213, 236, 252);
 }
 
 .card {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 400px;
-    height: 600px;
+    height: 100px;
     background: whitesmoke;
     padding: 28px 32px;
     overflow: hidden;
@@ -32,78 +33,110 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 form input {
-    color: rgb(51, 16, 16);
-    width: 80%;
+    width:65%;
     font-size: 25px;
     font-weight: 500;
-    text-transform: 32px;
-    padding-left: 32px;
-}
-
-form input::placeholder {
-    font-size: 20px;
-    font-weight: 500;
-color: rgb(65, 40, 9);
-text-transform: capitalize;
+    background: whitesmoke;
+    border-bottom: 1px solid  rgb(139, 191, 250);
+    text-align: center;
 }
 
 form button {
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     color: rgb(9, 9, 56);
     background: lightblue;
     border-radius: 50%;
-    font-size: 25px;
+    font-size:8px;
     transition: 0.5 ease;
 }
 
-form button:hover {
-    color: blanchedalmond;
-    background: rgb(63, 14, 63);
+form button::selection {
+    opacity: 0.5;
+    border-radius: 50%;
+    color: rgb(9, 9, 56);
 }
 
 form i{
-    position: absolute;
     color: black;
     font-size: 30px;
 }
 
-.weather-box{
-    text-align: center;
-}
-
-.weather-box img{
-    width: 60%;
-    margin-top: 30px;
-}
-
-.weather-box .temperature{
-    position: relative;
+form button i{
     color: black;
-    font-size: 4rem;
-    font-weight: 800;
-    margin-top: 30px;
-    margin-left: -16px;
-}
-
-.weather-box .temperature span{
-    position: absolute;
-    margin-left: 4px;
-    font-size: 1.5rem;
-}
-
-.weather-box .description{
-    color: blue;
-    font-size: 25px;
-    font-weight: 500;
-    text-transform: capitalize;
-    
+    font-size:20px;
 }
 
 .not-found{
     display: none;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    height: 65%;
+    margin-top: 16px;
 }
+
+.not-found img {
+    width: 90%;
+    margin-top: 12px;
+}
+
+.not-found p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main-content .hidden{
+    display: none;
+}
+
+.weather-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-box img{
+    width: 60%;
+}
+
+.temperature{
+font-size: 30px;
+font-weight: bold;
+margin: 8px 0px;
+}
+
+.main-content {
+    display: none;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+}
+
+.weather-details, .humid, .wind {
+    display: flex;
+}
+.weather-details {
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+.hiws {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-water, .fa-wind {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
